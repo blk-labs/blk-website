@@ -290,6 +290,7 @@ body {
 }
 
 .rec-dot {
+  opacity: .75;
   transform: scale(.7);
 }
 
@@ -314,6 +315,7 @@ body {
   border: none!important;
   color: gray;
   margin: auto .25rem;
+  padding: 6px!important;
 }
 
 .react-tabs__tab--selected {

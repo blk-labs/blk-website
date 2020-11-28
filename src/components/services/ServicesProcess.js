@@ -54,8 +54,18 @@ const ComponentToTrack = (props) => {
       }
       </Grid>
       ) : (
-      <Grid style={{ opacity: 0, height: '50vh' }}>
-
+      <Grid style={{ opacity: 0 }} container direction="row" justify="space-between">
+      {
+        markup.map((mark, index) => (
+          <Grid key={index} item xs={12} md={6}>
+            <img src={mark.image} alt='processImage' className="processImg" />
+            <div>
+              <Typography variant='h5' className="processTitle">{mark.title}</Typography>
+              <Typography variant='body1' className="processBody">{mark.body}</Typography>
+            </div>
+          </Grid>
+        ))
+      }
       </Grid>
       );
 
@@ -80,7 +90,7 @@ class ServicesProcess extends Component {
           <div>
             <small className="smallText" style={{ margin: '0' }}>OUR PROCESS</small>
           </div>
-          <TrackVisibility once>
+          <TrackVisibility once partialVisibility>
             <ComponentToTrack />
           </TrackVisibility>
         </Grid>

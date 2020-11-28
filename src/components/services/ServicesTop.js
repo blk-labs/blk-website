@@ -134,7 +134,7 @@ class ServicesTop extends Component {
 
     return (
       <Grid className={classes.topCont}>
-        <Grid style={{ height: '100vh' }}>
+        <Grid style={{ height: '105vh' }}>
           <div className={classes.serviceAnimate}>
             <div className={classes.dotAnimate}>
               <span className={classes.dotClass}></span>

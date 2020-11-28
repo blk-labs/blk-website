@@ -49,7 +49,7 @@ const styles = (theme) => ({
           <Typography variant="h4" className={classes.topText}>Terms and Conditions</Typography>
 
             <Typography className={classes.pClass}>
-              The BLK Labs website located at <a style={{ color: 'black' }} href="https://www.blklabs.dev">https://www.blklabs.dev</a> is a copyrighted work belonging to BLK Labs Inc. Certain features of the Site may be subject to additional guidelines, terms, or rules, which will be posted on the Site in connection with such features.
+              The BLK Labs website located at <a style={{ color: 'black' }} href="https://www.blklabs.co">https://www.blklabs.co</a> is a copyrighted work belonging to BLK Labs Inc. Certain features of the Site may be subject to additional guidelines, terms, or rules, which will be posted on the Site in connection with such features.
             </Typography>
 
             <Typography className={classes.pClass}>
@@ -148,9 +148,9 @@ const styles = (theme) => ({
 
             <Typography variant="h5" className={classes.subText}>Contact Information</Typography>
 
-            <Typography className={classes.pClass}>Address: hello@blklabs.dev</Typography>
+            <Typography className={classes.pClass}>Address: hello@blklabs.co</Typography>
 
-            <Typography className={classes.pClass}>Email: hello@blklabs.dev</Typography>
+            <Typography className={classes.pClass}>Email: hello@blklabs.co</Typography>
 
           </Grid>
         </Grid>

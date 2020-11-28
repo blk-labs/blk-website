@@ -108,8 +108,8 @@ class Contact extends Component {
 
     const details = [
       {title: 'working hours', item: 'Monday - Friday\n8AM - 6PM', icon: <AccessTimeIcon style={{ color: 'gray' }} />},
-      {title: 'contact us', type: 'mail', item: 'hello@blklabs.dev', icon: <MailOutlinedIcon style={{ color: 'gray' }} />},
-      {title: 'customer support', type: 'mail', item: 'support@blklabs.dev', icon: <MailOutlinedIcon style={{ color: 'gray' }} />},
+      {title: 'contact us', type: 'mail', item: 'hello@blklabs.co', icon: <MailOutlinedIcon style={{ color: 'gray' }} />},
+      {title: 'customer support', type: 'mail', item: 'support@blklabs.co', icon: <MailOutlinedIcon style={{ color: 'gray' }} />},
       {title: 'call us', type: 'phone', item: '(+234) 907 866 9414', icon: <PhoneEnabledOutlinedIcon style={{ color: 'gray' }} />},
     ]
 

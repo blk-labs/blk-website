@@ -18,6 +18,13 @@ const styles = (theme) => ({
     fontFamily: 'Roboto!important',
     margin: '7.5% 0 5%'
   },
+  textH: {
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '115%',
+      paddingBottom: '10%'
+
+    }
+  },
   gridType: {
     height: '400px',
     position: 'relative',
@@ -76,7 +83,7 @@ class ServicesValue extends Component {
             <small className="smallText" style={{ margin: '0' }}>OUR COMMITMENT</small>
           </div>
           <Grid>          
-            <Typography variant="h6">Our team isn’t always about designing and developing; we carry a deep enthusiasm about learning and try to inspirate each other to be better developers and push boundaries. We bring this passion to our work, and adhire to a few core beliefs when working on your product.</Typography>
+            <Typography className={classes.textH} variant="h6">Our team isn’t always about designing and developing; we carry a deep enthusiasm about learning and try to inspirate each other to be better developers and push boundaries. We bring this passion to our work, and adhire to a few core beliefs when working on your product.</Typography>
             <Typography variant="h4" className={classes.textClass}>We believe that...</Typography>
             <Grid className={classes.gridType}>
               <TrackVisibility once partialVisibility>
