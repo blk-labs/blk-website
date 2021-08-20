@@ -1,5 +1,6 @@
 {
   "name": "blk-website",
+  "homepage": "https://blklabs.co",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
