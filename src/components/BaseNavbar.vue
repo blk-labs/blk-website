@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BaseIcon from './BaseIcon.vue';
 
 </script>
 
@@ -8,7 +9,7 @@
             <div class="flex justify-between items-center">
                 <img alt="BLK" src="./../assets/logo.png" class="w-24 h-24" />
                 <BaseButton type="button" class="text-3xl text-black rounded-full p-2.5 bg-white drop-shadow-xl">
-                    <BaseIcon icon="ci:menu-duo" />
+                    <BaseIcon icon="heroicons-outline:menu-alt-4" />
                 </BaseButton>
             </div>
         </div>
