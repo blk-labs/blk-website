@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue'
 import { Article, Service, Work } from '~/types'
+
+
 const blogs: Ref<Article[]> = ref([
     {
         image: 'https://images.unsplash.com/photo-1444084316824-dc26d6657664?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
@@ -46,17 +48,20 @@ const works: Ref<Work[]> = ref([
     {
         image: 'https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=972&q=80',
         text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Clikvet'
+        title: 'Clikvet',
+        path: ''
     },
     {
         image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
         text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Sketchd'
+        title: 'Sketchd',
+        path: ''
     },
     {
         image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
         text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Evolve fitness'
+        title: 'Evolve fitness',
+        path: ''
     },
 ])
 </script>
