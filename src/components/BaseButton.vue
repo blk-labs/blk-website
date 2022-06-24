@@ -26,7 +26,7 @@ const classes = computed(() => {
 
 <style scoped>
 .blk--btn-text {
-    @apply text-primary hover:text-[#8494F8] text-base font-bold;
+    @apply text-primary hover:text-accent text-base font-bold;
 }
 .blk--btn-outline {
     @apply text-primary border border-primary hover:border-white hover:bg-white text-base font-bold;

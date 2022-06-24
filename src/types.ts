@@ -7,3 +7,9 @@ export interface Service {
 export interface Work extends Service {
     path: string
 }
+
+export interface Article {
+    image: string
+    title: string
+    date: string
+}
