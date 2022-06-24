@@ -12,8 +12,8 @@ const onClick = defineEmits<{ (e: 'click'): void }>()
 
 const classes = computed(() => {
     return {
-        'transition ease-in delay-100 uppercase': true,
-        [`blk--btn-${btnProps.btnType || "outline"}`]: `${btnTypes.indexOf(btnProps.btnType) !== -1}`,
+        'transition-all ease-in delay-100 uppercase': true,
+        [`blk--btn-${btnProps.btnType}`]: `${btnTypes.indexOf(btnProps.btnType) !== -1}`,
     }
 })
 </script>
@@ -29,7 +29,7 @@ const classes = computed(() => {
     @apply text-primary hover:text-accent text-base font-bold;
 }
 .blk--btn-outline {
-    @apply text-primary border border-primary hover:border-white hover:bg-white text-base font-bold;
+    @apply text-primary border border-primary hover:border-white hover:bg-white hover:shadow-md text-base font-bold;
 }
 .blk--btn-action {
     @apply text-white hover:text-primary border border-primary bg-primary hover:bg-transparent text-base font-medium;

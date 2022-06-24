@@ -5,6 +5,7 @@
 <template>
   <BaseNavbar/>
   <router-view/>
+  <BaseFooter/>
 </template>
 
 <style>

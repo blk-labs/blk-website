@@ -1,0 +1,66 @@
+<script setup lang="ts">
+const links = [
+    {
+        text: 'Services',
+        path: ''
+    },
+    {
+        text: 'About Us',
+        path: ''
+    },
+    {
+        text: 'Contact Us',
+        path: ''
+    },
+]
+
+const socials = [
+    {
+        icon: 'entypo-social:linkedin-with-circle',
+        path: ''
+    },
+    {
+        icon: 'entypo-social:twitter',
+        path: ''
+    },
+    {
+        icon: 'carbon:logo-instagram',
+        path: ''
+    },
+    {
+        icon: 'bi:medium',
+        path: ''
+    },
+]
+</script>
+
+<template>
+    <footer class="pt-32 bg-[#00073A]">
+        <div class="container mx-auto px-4 lg:px-0">
+            <div class="grid gap-16">
+                <div class="grid gap-12">
+                    <div class="grid gap-6 text-white">
+                        <span class="font-medium text-lg">Interested? We would love to hear from you and offer our solutions for your business.</span>
+                        <h1 class="font-bold text-6xl">Lets start your next project together</h1>
+                    </div>
+                    <BaseButton btnType="outline" class="uppercase w-fit py-4 px-6 text-white border border-white hover:bg-white hover:text-primary hover:shadow-none">Contact us</BaseButton>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-8 text-white text-lg font-normal">
+                        <span v-for="(link, i) in links" :key="i">{{ link.text }}</span>
+                    </div>
+                    <div class="flex items-center gap-5">
+                        <BaseButton v-for="(social, n) in socials" :key="n" class="rounded-full border-none bg-white/20 hover:bg-white/20 p-2">
+                            <BaseIcon :icon="social.icon" class="text-white hover:text-white h-6 w-6" />
+                        </BaseButton>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-white/20 pt-6 pb-7">
+                <p class="text-white">
+                &copy; {{ new Date().getFullYear() }} BLK Labs. All rights reserved. Legal notice and privacy policy
+                </p>
+            </div>
+        </div>
+    </footer>
+</template>
