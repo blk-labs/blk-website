@@ -1,25 +1,20 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue'
-import { Work } from '~/types'
-const works: Ref<Work[]> = ref([
+import { Article, Service, Work } from '~/types'
+const blogs: Ref<Article[]> = ref([
     {
-        image: 'https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=972&q=80',
-        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Clikvet'
+        image: 'https://images.unsplash.com/photo-1444084316824-dc26d6657664?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+        date: '29 February, 2020',
+        title: 'Project is the result of a challenge I participated in as a guest on.'
     },
     {
-        image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
-        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Sketchd'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
-        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Evolve fitness'
+        image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2226&q=80',
+        date: '29 February, 2020',
+        title: 'Project is the result of a challenge I participated in as a guest on.'
     },
 ])
 
-const whatWeDo: Ref<Work[]> = ref([
+const whatWeDo: Ref<Service[]> = ref([
     {
         image: '/assets/design icon_ccexpress 1.png',
         title: 'UI/UX Design',
@@ -46,10 +41,28 @@ const whatWeDo: Ref<Work[]> = ref([
         text: 'Our commitment doesn’t finish with the project’s end; we manage your digital product and we go with you beyond the delivery.'
     },
 ])
+
+const works: Ref<Work[]> = ref([
+    {
+        image: 'https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=972&q=80',
+        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
+        title: 'Clikvet'
+    },
+    {
+        image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
+        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
+        title: 'Sketchd'
+    },
+    {
+        image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
+        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
+        title: 'Evolve fitness'
+    },
+])
 </script>
 
 <template>
-    <section class="bg-[#8494F8]/10 pt-56 pb-14">
+    <section class="bg-accent/10 pt-56 pb-14">
         <div class="container mx-auto px-4 lg:px-0">
             <div class="grid grid-cols-3 gap-4">
                 <div class="col-span-3 lg:col-span-2 grid gap-9 content-center">
@@ -79,6 +92,10 @@ const whatWeDo: Ref<Work[]> = ref([
                         <BaseWork :image="work.image" :title="work.title" :text="work.text" />
                     </div>
                 </div>
+                <div class="lg:hidden ml-auto flex items-center gap-4 text-3xl">
+                    <BaseIcon icon="heroicons-outline:arrow-sm-left" class="text-[#989898]" />
+                    <BaseIcon icon="heroicons-outline:arrow-narrow-right" class="text-black" />
+                </div>
             </div>
         </div>
     </section>
@@ -89,11 +106,49 @@ const whatWeDo: Ref<Work[]> = ref([
                 <div class="flex justify-between items-center">
                     <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">What we do</h2>
                 </div>
-                <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-[#8494F8]">
+                <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-accent">
                     <div v-for="(tech, index) in whatWeDo" :key="index" class="lg:p-10">
                         <BaseService :service="tech" />
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#F8F8FF] bg-[url('/assets/map.svg')] bg-contain bg-no-repeat bg-bottom lg:bg-right pt-32 pb-44">
+        <div class="container mx-auto px-4 lg:px-0">
+            <div class="grid gap-16">
+                <span class="text-primary font-bold text-lg">DESIGN . DEVELOP . MANAGE</span>
+                <h1 class="font-bold text-[#121633] text-7xl lg:text-8xl">We manage your ideas</h1>
+            </div>
+        </div>
+    </section>
+    <section class="bg-accent/20 py-12 lg:py-32">
+        <div class="container mx-auto px-4 lg:px-0">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-16 justify-items-stretch">
+                <img src="https://images.unsplash.com/photo-1584119164246-461d43e9bab3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" class="object-cover object-center w-40 lg:w-80 h-40 lg:h-80 rounded-full lg:justify-self-center">
+                <div class="grid gap-6 content-center lg:font-normal">
+                    <h2 class="text-accent font-medium text-3xl">We develop enterprise-grade web & digital solutions for businesses.</h2>
+                    <div class="grid gap-3 font-normal">
+                        <p class="text-tertiary text-lg">"Our process is very simple; we always ask ourselves if we are doing the best work we can. Because we are commited to satisfying our clients on every project, and the only way we can achieve that is by doing great work."</p>
+                        <span class="text-[#121633] text-sm">Farooq Bello - Director</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-32 lg:py-20">
+        <div class="container mx-auto px-4 lg:px-0">
+            <div class="grid gap-10">
+                <div class="flex justify-between items-center">
+                    <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">Our blog</h2>
+                    <span class="text-primary font-bold text-2xl hidden lg:block">View all blog</span>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <div v-for="(blog, index) in blogs" :key="index">
+                        <BaseArticle :article="blog" />
+                    </div>
+                </div>
+                <span class="text-primary font-bold text-2xl ml-auto lg:hidden block">View all blog</span>
             </div>
         </div>
     </section>
