@@ -19,7 +19,7 @@ const workProps = defineProps<WorkProps>()
                 <h1 class="text-2xl font-bold text-neutral-600">{{ workProps.title }}</h1>
                 <p class="text-base font-normal text-[#776F8D]">{{ workProps.date }}</p>
             </div>
-            <BaseButton btnType="text" class="uppercase w-fit">Read More</BaseButton>
+            <BaseButton btnType="text" class="w-fit">Read More</BaseButton>
         </div>
     </div>
 </template>

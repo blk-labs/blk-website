@@ -4,7 +4,7 @@ import BaseIcon from './BaseIcon.vue';
 </script>
 
 <template>
-    <nav>
+    <nav class="absolute top-0 left-0 right-0 z-10">
         <div class="container mx-auto px-4 lg:px-0 pt-8">
             <div class="flex justify-between items-center">
                 <img alt="BLK" src="https://blklabs.co/static/media/blk-logoDark.13e50d81.png" class="w-24 h-24" />
