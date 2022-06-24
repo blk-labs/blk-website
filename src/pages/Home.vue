@@ -89,8 +89,8 @@ const whatWeDo: Ref<Work[]> = ref([
                 <div class="flex justify-between items-center">
                     <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">What we do</h2>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-3 divide-x divide-dashed">
-                    <div v-for="(tech, index) in whatWeDo" :key="index" class="p-10">
+                <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-[#8494F8]">
+                    <div v-for="(tech, index) in whatWeDo" :key="index" class="lg:p-10">
                         <BaseService :service="tech" />
                     </div>
                 </div>
