@@ -32,6 +32,6 @@ const classes = computed(() => {
     @apply text-primary border border-primary hover:border-white hover:bg-white hover:shadow-md text-base font-bold;
 }
 .blk--btn-action {
-    @apply text-white hover:text-primary border border-primary bg-primary hover:bg-transparent text-base font-medium;
+    @apply text-white hover:text-primary border border-primary bg-primary hover:bg-primary/5 text-base font-medium;
 }
 </style>

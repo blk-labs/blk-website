@@ -2,34 +2,34 @@
 const links = [
     {
         text: 'Services',
-        path: ''
+        path: '/services'
     },
     {
         text: 'About Us',
-        path: ''
+        path: '/about-us'
     },
     {
         text: 'Contact Us',
-        path: ''
+        path: '/contact'
     },
 ]
 
 const socials = [
     {
         icon: 'entypo-social:linkedin-with-circle',
-        path: ''
+        path: 'https://www.linkedin.com/company/blk-labs/'
     },
     {
         icon: 'entypo-social:twitter',
-        path: ''
+        path: '#'
     },
     {
         icon: 'carbon:logo-instagram',
-        path: ''
+        path: 'https://www.instagram.com/blk_labs/'
     },
     {
         icon: 'bi:medium',
-        path: ''
+        path: 'http://medium.com/@blklabs'
     },
 ]
 </script>
@@ -47,12 +47,12 @@ const socials = [
                 </div>
                 <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 lg:gap-0">
                     <div class="flex items-center gap-8 text-white text-lg font-normal">
-                        <span v-for="(link, i) in links" :key="i">{{ link.text }}</span>
+                        <router-link v-for="(link, i) in links" :key="i" :to="link.path">{{ link.text }}</router-link>
                     </div>
                     <div class="flex items-center gap-5">
-                        <BaseButton v-for="(social, n) in socials" :key="n" class="rounded-full border-none bg-white/20 hover:bg-white/20 p-2">
+                        <a v-for="(social, n) in socials" :key="n" :href="social.path" target="_blank" class="decoration-none rounded-full border-none bg-white/20 hover:bg-white/20 p-2">
                             <BaseIcon :icon="social.icon" class="text-white hover:text-white h-6 w-6" />
-                        </BaseButton>
+                        </a>
                     </div>
                 </div>
             </div>
