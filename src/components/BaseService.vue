@@ -10,7 +10,7 @@ const serviceProps = defineProps<{service: Service}>()
         <div class="grid gap-5 text-left">
             <div class="grid gap-2.5">
                 <h1 class="text-2xl font-normal text-primary">{{ serviceProps.service.title }}</h1>
-                <hr class="border-primary w-3/12 border-2">
+                <hr class="border-primary w-3/12 border-2 bg-primary">
                 <p class="text-base lg:text-lg font-normal text-tertiary">{{ serviceProps.service.text }}</p>
             </div>
         </div>

@@ -41,11 +41,11 @@ const socials = [
                 <div class="grid gap-12">
                     <div class="grid gap-6 text-white">
                         <span class="font-medium text-lg">Interested? We would love to hear from you and offer our solutions for your business.</span>
-                        <h1 class="font-bold text-6xl">Lets start your next project together</h1>
+                        <h1 class="font-bold text-3xl lg:text-6xl">Lets start your next project together</h1>
                     </div>
                     <BaseButton btnType="outline" class="uppercase w-fit py-4 px-6 text-white border border-white hover:bg-white hover:text-primary hover:shadow-none">Contact us</BaseButton>
                 </div>
-                <div class="flex justify-between items-center">
+                <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 lg:gap-0">
                     <div class="flex items-center gap-8 text-white text-lg font-normal">
                         <span v-for="(link, i) in links" :key="i">{{ link.text }}</span>
                     </div>
@@ -57,8 +57,8 @@ const socials = [
                 </div>
             </div>
             <div class="mt-8 border-t border-white/20 pt-6 pb-7">
-                <p class="text-white">
-                &copy; {{ new Date().getFullYear() }} BLK Labs. All rights reserved. Legal notice and privacy policy
+                <p class="text-white text-xs font-light">
+                &copy; {{ new Date().getFullYear() }} BLK Labs. All rights reserved. Legal notice and privacy policy.
                 </p>
             </div>
         </div>
