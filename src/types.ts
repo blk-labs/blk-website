@@ -13,3 +13,9 @@ export interface Article {
     title: string
     date: string
 }
+
+export interface Team {
+    image: string
+    name: string
+    role: string
+}
