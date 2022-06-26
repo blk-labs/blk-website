@@ -55,53 +55,55 @@ const howWeWork: Ref<Service[]> = ref([
 </script>
 
 <template>
-    <section class="bg-accent/10 pt-64 pb-32">
-        <div class="container mx-auto px-4 lg:px-0">
-            <div class="grid grid-cols-3 gap-4">
-                <div class="col-span-3 lg:col-span-2 grid gap-9 content-center">
-                    <h1 class="font-bold text-[#121633] text-4xl lg:text-5xl">Develop your digital product with the latest and innovative technologies.</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-16">
-        <div class="container mx-auto px-4 lg:px-0">
-            <div class="grid gap-6">
-                <span class="text-primary font-bold text-lg">OUR PROCESS</span>
-                <div class="flex justify-between items-center">
-                    <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">How we work</h2>
-                </div>
-                <div class="grid gap-10 grid-cols-1 lg:grid-cols-4">
-                    <div v-for="(process, index) in howWeWork" :key="index" class="lg:pr-10" :class="index === 3 ? 'divide-transparent' : ''">
-                        <BaseService :service="process" />
+    <div id="services">
+        <section class="bg-accent/10 pt-64 pb-32">
+            <div class="container mx-auto px-4 lg:px-0">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="col-span-3 lg:col-span-2 grid gap-9 content-center">
+                        <h1 class="font-bold text-[#121633] text-4xl lg:text-5xl">Develop your digital product with the latest and innovative technologies.</h1>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="py-24">
-        <div class="container mx-auto px-4 lg:px-0">
-            <div class="grid gap-6">
-                <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
-                <div class="flex justify-between items-center">
-                    <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">What we do</h2>
-                </div>
-                <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-accent">
-                    <div v-for="(tech, index) in whatWeDo" :key="index" class="lg:p-10" :class="index === 3 ? 'divide-transparent' : ''">
-                        <BaseService :service="tech" />
+        </section>
+        <section class="py-16">
+            <div class="container mx-auto px-4 lg:px-0">
+                <div class="grid gap-6">
+                    <span class="text-primary font-bold text-lg">OUR PROCESS</span>
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">How we work</h2>
+                    </div>
+                    <div class="grid gap-10 grid-cols-1 lg:grid-cols-4">
+                        <div v-for="(process, index) in howWeWork" :key="index" class="lg:pr-10" :class="index === 3 ? 'divide-transparent' : ''">
+                            <BaseService :service="process" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="bg-[#E6E8FD] py-12 lg:py-32">
-        <div class="container mx-auto px-4 lg:px-0">
-            <div class="grid gap-6 content-center lg:font-normal">
-                <span class="text-primary font-bold text-lg">OUR COMMITMENT</span>
-                <h2 class="font-bold text-neutral-600 text-3xl lg:text-4xl">Our team isn’t always about designing and developing; we carry a deep enthusiasm about learning, inspiring each other to be better developers and pushing boundaries. We bring this passion to our work, and adhere to a few core beliefs when working on your product.</h2>
+        </section>
+        <section class="py-24">
+            <div class="container mx-auto px-4 lg:px-0">
+                <div class="grid gap-6">
+                    <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">What we do</h2>
+                    </div>
+                    <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-accent">
+                        <div v-for="(tech, index) in whatWeDo" :key="index" class="lg:p-10" :class="index === 3 ? 'divide-transparent' : ''">
+                            <BaseService :service="tech" />
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="bg-[#E6E8FD] py-12 lg:py-32">
+            <div class="container mx-auto px-4 lg:px-0">
+                <div class="grid gap-6 content-center lg:font-normal">
+                    <span class="text-primary font-bold text-lg">OUR COMMITMENT</span>
+                    <h2 class="font-bold text-neutral-600 text-3xl lg:text-4xl">Our team isn’t always about designing and developing; we carry a deep enthusiasm about learning, inspiring each other to be better developers and pushing boundaries. We bring this passion to our work, and adhere to a few core beliefs when working on your product.</h2>
+                </div>
+            </div>
+        </section>
+    </div>
 </template>
 
 <style scoped>

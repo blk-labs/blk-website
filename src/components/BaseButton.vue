@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 
 interface BtnProps {
-    btnType: string
+    btnType?: string
 }
 
 const btnProps = defineProps<BtnProps>()
@@ -13,7 +13,7 @@ const onClick = defineEmits<{ (e: 'click'): void }>()
 const classes = computed(() => {
     return {
         'transition-all ease-in delay-100 uppercase': true,
-        [`blk--btn-${btnProps.btnType}`]: `${btnTypes.indexOf(btnProps.btnType) !== -1}`,
+        [`blk--btn-${btnProps.btnType}`]: `${btnTypes.indexOf(btnProps.btnType!) !== -1}`,
     }
 })
 </script>

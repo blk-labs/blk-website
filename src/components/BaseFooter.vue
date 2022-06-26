@@ -35,7 +35,7 @@ const socials = [
 </script>
 
 <template>
-    <footer class="pt-32 bg-[#00073A]">
+    <footer class="pt-20 lg:pt-32 bg-[#00073A]">
         <div class="container mx-auto px-4 lg:px-0">
             <div class="grid gap-16">
                 <div class="grid gap-12">

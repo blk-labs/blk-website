@@ -1,8 +1,15 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
 import type { Article } from '~/types'
 import BaseButton from './BaseButton.vue';
 
-const articleProps = defineProps<{article: Article}>()
+const router = useRouter()
+
+const articleProps = defineProps<{ article: Article }>()
+
+const viewArticle = (articlePath: string) => {
+    router.push({ path: articlePath })
+}
 </script>
 
 <template>
@@ -13,7 +20,7 @@ const articleProps = defineProps<{article: Article}>()
                 <h1 class="text-2xl font-bold text-neutral-600">{{ articleProps.article.title }}</h1>
                 <p class="text-base font-normal text-[#776F8D]">{{ articleProps.article.date }}</p>
             </div>
-            <BaseButton btnType="text" class="w-fit">Read More</BaseButton>
+            <BaseButton btnType="text" class="w-fit" @click="viewArticle(articleProps.article.path)">Read More</BaseButton>
         </div>
     </div>
 </template>

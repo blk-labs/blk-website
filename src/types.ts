@@ -12,6 +12,7 @@ export interface Article {
     image: string
     title: string
     date: string
+    path: string
 }
 
 export interface Team {

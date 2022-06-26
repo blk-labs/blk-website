@@ -14,11 +14,11 @@ const navItems = [
     },
     {
         title: 'Our work',
-        path: '#'
+        path: '/our-work'
     },
     {
         title: 'Blog',
-        path: '#'
+        path: '/blog'
     },
     {
         title: 'About',
@@ -39,7 +39,9 @@ const toggleNavbar = () => {
     <nav class="absolute top-0 left-0 right-0 z-10">
         <div class="relative container mx-auto px-4 lg:px-0 pt-8">
             <div class="flex justify-between items-center">
-                <img alt="BLK" src="https://blklabs.co/static/media/blk-logoDark.13e50d81.png" class="w-20 lg:w-24 h-20 lg:h-24" />
+                <router-link to="/">
+                    <img alt="BLK" src="https://blklabs.co/static/media/blk-logoDark.13e50d81.png" class="w-20 lg:w-24 h-20 lg:h-24" />
+                </router-link>
                 <BaseButton type="button" class="rounded-full p-4 bg-white drop-shadow-xl border-none" @click="toggleNavbar()">
                     <BaseIcon icon="heroicons-outline:menu-alt-4" class="text-2xl text-black" />
                 </BaseButton>
