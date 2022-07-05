@@ -75,17 +75,17 @@ const marginClass = (index: number) => {
 
 <template>
     <div id="home">
-        <section class="bg-accent/10 pt-64 pb-32">
-            <div class="container mx-auto px-4 lg:px-0">
-                <div class="grid grid-cols-3 gap-4">
-                    <div class="col-span-3 lg:col-span-2 grid gap-9 content-center">
-                        <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
-                        <h1 class="font-bold text-[#121633] text-4xl lg:text-5xl">A team of remote designers and developers building scalable and intuitive web solutions.</h1>
-                        <BaseButton btnType="action" class="w-fit py-5 px-12 font-medium text-base">Send A Brief</BaseButton>
+        <section class="bg-accent/10 pt-64 pb-32 relative overflow-hidden">
+            <div class="container mx-auto px-4 lg:px-0 flex items-center">
+                <div class="ml-auto flex-1 lg:w-4/6 grid gap-9 content-center">
+                    <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
+                    <h1 class="font-bold text-[#121633] text-4xl lg:text-5xl">A team of remote designers and developers building scalable and intuitive web solutions.</h1>
+                    <BaseButton btnType="action" class="w-fit py-5 px-12 font-medium text-base">Send A Brief</BaseButton>
+                </div>
+                <div class="hidden lg:block lg:flex-1 lg:w-2/6">
+                    <div class="absolute right-0 bottom-0">
+                        <img src="/assets/keyboard.png" class="hover:scale-125 hover:mb-10 hover:mr-10 opacity-70 hover:opacity-100 w-96 transition-all ease-in-out delay-150">
                     </div>
-                    <!-- <div class="hidden lg:block">
-                        <img src="/assets/keyboard.png">
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -156,7 +156,7 @@ const marginClass = (index: number) => {
                 <div class="grid gap-10">
                     <div class="flex justify-between items-center">
                         <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">Our blog</h2>
-                        <span class="text-primary font-bold text-2xl hidden lg:block">View all blog</span>
+                        <router-link to="/blog" class="text-primary font-bold text-2xl hidden lg:block">View all blog</router-link>
                     </div>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                         <div v-for="(blog, index) in blogs" :key="index">

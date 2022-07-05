@@ -12,6 +12,7 @@ export interface Article {
     image: string
     title: string
     date: string
+    header?: boolean
     path: string
 }
 

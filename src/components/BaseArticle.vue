@@ -17,7 +17,7 @@ const viewArticle = (articlePath: string) => {
         <img :src="articleProps.article.image" class="object-cover object-center w-full h-[440px]">
         <div class="grid gap-5 text-left">
             <div class="grid gap-2.5">
-                <h1 class="text-2xl font-bold text-neutral-600">{{ articleProps.article.title }}</h1>
+                <h1 class="text-2xl font-bold text-neutral-600" :class="articleProps.article.header ? 'lg:text-4xl' : ''">{{ articleProps.article.title }}</h1>
                 <p class="text-base font-normal text-[#776F8D]">{{ articleProps.article.date }}</p>
             </div>
             <BaseButton btnType="text" class="w-fit" @click="viewArticle(articleProps.article.path)">Read More</BaseButton>

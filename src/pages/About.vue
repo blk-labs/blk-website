@@ -53,10 +53,10 @@ const teams: Ref<Team[]> = ref([
                         <h2 class="font-bold text-accent text-4xl lg:text-6xl h-min">About Us</h2>
                         <p class="text-[#564D73] font-normal text-base lg:text-3xl">BLK Labs is an international web development company focused on building and deploying complex solutions. We utilize comprehensive digital consulting experience and employ build-execute-deploy model to provide effective solutions taking into account advanced seamless scaling and integration strategy. </p>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80">
+                    <img src="https://media.istockphoto.com/photos/spaceship-startup-rocket-from-the-mobile-phone-on-the-purple-launch-picture-id1268143308?b=1&k=20&m=1268143308&s=170667a&w=0&h=pwGxdE-3N487eeIc2KPTvC4GE8MrTN9JqcEJPz2w5qA=" class="w-screen lg:w-full">
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <img src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" class="w-screen lg:w-full order-2 lg:order-1">
+                    <img src="public/assets/employees-together-build-word-teamwork-business.png" class="w-screen lg:w-full order-2 lg:order-1">
                     <div class="grid content-start gap-14 lg:mt-10 px-4 order-1 lg:order-2">
                         <p class="text-[#564D73] font-normal text-base lg:text-3xl">At our heart, we really are just a team of remote strategists and developers who enjoy code. It is addiction, skill, and passion. That is our vision; using our addiction to create products and provide solutions that work well.</p>
                     </div>

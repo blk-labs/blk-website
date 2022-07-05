@@ -3,41 +3,41 @@ import { ref, Ref } from 'vue'
 import { Work } from '~/types'
 
 const works: Ref<Work[]> = ref([
-    {
-        image: 'https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=972&q=80',
-        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Clikvet',
-        path: ''
-    },
-    {
-        image: '/assets/sketchd.png',
-        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Sketchd',
-        path: ''
-    },
-    {
-        image: '/assets/mph.png',
-        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'My Political Hub',
-        path: ''
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
-        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Evlove fitness',
-        path: ''
-    },
-    {
-        image: '/assets/f11.png',
-        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Fantasy 11',
-        path: ''
-    },
+    // {
+    //     image: 'https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=972&q=80',
+    //     text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
+    //     title: 'Clikvet',
+    //     path: ''
+    // },
+    // {
+    //     image: '/assets/sketchd.png',
+    //     text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
+    //     title: 'Sketchd',
+    //     path: ''
+    // },
+    // {
+    //     image: '/assets/mph.png',
+    //     text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
+    //     title: 'My Political Hub',
+    //     path: ''
+    // },
+    // {
+    //     image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
+    //     text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
+    //     title: 'Evlove fitness',
+    //     path: ''
+    // },
+    // {
+    //     image: '/assets/f11.png',
+    //     text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
+    //     title: 'Fantasy 11',
+    //     path: ''
+    // },
 ])
 </script>
 
 <template>
-    <div id="our-work">
+    <div v-if="works.length > 0" id="our-work">
         <section class="bg-accent/10 pt-64 pb-32">
             <div class="container mx-auto px-4 lg:px-0">
                 <div class="grid gap-6">
@@ -65,6 +65,7 @@ const works: Ref<Work[]> = ref([
             </div>
         </section>
     </div>
+    <ComingSoon v-else/>
 </template>
 
 <style scoped>
