@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue'
-import { Article, Service, Work } from '~/types'
+import { Article, Service, Work } from './../types'
 
 const blogs: Ref<Article[]> = ref([
     {
         image: 'https://images.unsplash.com/photo-1444084316824-dc26d6657664?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
         date: '29 February, 2020',
+        path: '#',
         title: 'Project is the result of a challenge I participated in as a guest on.'
     },
     {
         image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2226&q=80',
         date: '29 February, 2020',
+        path: '#',
         title: 'Project is the result of a challenge I participated in as a guest on.'
     },
 ])

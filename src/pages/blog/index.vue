@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue'
-import { Article } from '~/types'
+import { Article } from './../../types'
 
 const blogs: Ref<Article[]> = ref([
     // {

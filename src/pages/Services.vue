@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue'
-import { Service } from '~/types'
+import { Service } from './../types'
 
 const whatWeDo: Ref<Service[]> = ref([
     {

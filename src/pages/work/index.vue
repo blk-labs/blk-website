@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue'
-import { Work } from '~/types'
+import { Work } from './../../types'
 
 const works: Ref<Work[]> = ref([
     // {

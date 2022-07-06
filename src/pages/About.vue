@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue'
-import { Team } from '~/types'
+import { Team } from './../types'
 
 const teams: Ref<Team[]> = ref([
     {
@@ -56,7 +56,7 @@ const teams: Ref<Team[]> = ref([
                     <img src="https://media.istockphoto.com/photos/spaceship-startup-rocket-from-the-mobile-phone-on-the-purple-launch-picture-id1268143308?b=1&k=20&m=1268143308&s=170667a&w=0&h=pwGxdE-3N487eeIc2KPTvC4GE8MrTN9JqcEJPz2w5qA=" class="w-screen lg:w-full">
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <img src="public/assets/employees-together-build-word-teamwork-business.png" class="w-screen lg:w-full order-2 lg:order-1">
+                    <img src="/assets/employees-together-build-word-teamwork-business.png" class="w-screen lg:w-full order-2 lg:order-1">
                     <div class="grid content-start gap-14 lg:mt-10 px-4 order-1 lg:order-2">
                         <p class="text-[#564D73] font-normal text-base lg:text-3xl">At our heart, we really are just a team of remote strategists and developers who enjoy code. It is addiction, skill, and passion. That is our vision; using our addiction to create products and provide solutions that work well.</p>
                     </div>
