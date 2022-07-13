@@ -39,7 +39,7 @@ const works: Ref<Work[]> = ref([
 <template>
     <div v-if="works.length > 0" id="our-work">
         <section class="bg-accent/10 pt-64 pb-32">
-            <div class="container mx-auto px-4 lg:px-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-6">
                     <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
                     <h1 class="font-bold text-[#121633] text-4xl lg:text-7xl">We manage your ideas</h1>
@@ -47,7 +47,7 @@ const works: Ref<Work[]> = ref([
             </div>
         </section>
         <section class="py-16">
-            <div class="container mx-auto px-4 lg:px-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-16">
                     <div class="grid gap-6">
                         <span class="text-primary font-bold text-lg">WHAT WE HAVE DONE</span>

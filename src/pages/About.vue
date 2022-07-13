@@ -39,7 +39,7 @@ const teams: Ref<Team[]> = ref([
 <template>
     <div id="about-us">
         <section class="bg-accent/10 pt-64 pb-32">
-            <div class="container mx-auto px-4 lg:px-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-5">
                     <h1 class="font-extrabold text-[#121633] text-4xl lg:text-7xl">Marhaba,<br>We are BLK Labs</h1>
                     <p class="font-normal text-lg lg:text-3xl text-[#564D73]">Not your everyday tech company - we are remote developers who enjoy transforming business ideas into digital solutions</p>
@@ -68,7 +68,7 @@ const teams: Ref<Team[]> = ref([
             </div>
         </section>
         <section class="py-12 lg:py-32">
-            <div class="container mx-auto px-4 lg:px-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-x-5 gap-y-14 grid-cols-1 lg:grid-cols-3">
                     <BaseTeamCard v-for="team in teams" :team="team"/>
                 </div>

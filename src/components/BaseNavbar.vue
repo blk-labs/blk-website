@@ -37,7 +37,7 @@ const toggleNavbar = () => {
 
 <template>
     <nav class="absolute top-0 left-0 right-0 z-10">
-        <div class="relative container mx-auto px-4 lg:px-0 pt-8">
+        <div class="relative max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 pt-8">
             <div class="flex justify-between items-center">
                 <router-link to="/">
                     <img alt="BLK" src="https://blklabs.co/static/media/blk-logoDark.13e50d81.png" class="w-20 lg:w-24 h-20 lg:h-24" />
@@ -47,7 +47,7 @@ const toggleNavbar = () => {
                 </BaseButton>
             </div>
             <Transition name="slide-fade">
-                <div v-if="showMenu" class="fixed lg:absolute hidden lg:flex py-8 w-screen h-screen lg:h-fit lg:max-w-sm lg:top-8 lg:right-0 bg-accent shadow-none lg:shadow-2xl lg:shadow-accent z-20">
+                <div v-if="showMenu" class="fixed lg:absolute hidden lg:flex py-8 w-screen h-screen lg:h-fit lg:max-w-sm lg:top-8 lg:right-9 bg-accent shadow-none lg:shadow-2xl lg:shadow-accent z-20">
                     <div class="container mx-auto px-5 lg:px-10 lg:pb-14 pt-8 lg:pt-0">
                         <div class="animate__animated animate__fadeInDown grid gap-12 lg:gap-1">
                             <div class="flex items-center justify-between">

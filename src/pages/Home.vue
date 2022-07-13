@@ -78,7 +78,7 @@ const marginClass = (index: number) => {
 <template>
     <div id="home">
         <section class="bg-accent/10 pt-64 pb-32 relative overflow-hidden">
-            <div class="container mx-auto px-4 lg:px-0 flex items-center">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 flex items-center">
                 <div class="ml-auto flex-1 lg:w-4/6 grid gap-9 content-center">
                     <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
                     <h1 class="font-bold text-[#121633] text-4xl lg:text-5xl">A team of remote designers and developers building scalable and intuitive web solutions.</h1>
@@ -92,7 +92,7 @@ const marginClass = (index: number) => {
             </div>
         </section>
         <section class="py-16">
-            <div class="container mx-auto px-4 lg:px-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-16">
                     <div class="grid gap-6">
                         <span class="text-primary font-bold text-lg">WHAT WE HAVE DONE</span>
@@ -117,7 +117,7 @@ const marginClass = (index: number) => {
             </div>
         </section>
         <section class="py-16">
-            <div class="container mx-auto px-4 lg:px-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-6">
                     <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
                     <div class="flex justify-between items-center">
@@ -132,7 +132,7 @@ const marginClass = (index: number) => {
             </div>
         </section>
         <section class="bg-[#F8F8FF] bg-[url('/assets/map.svg')] bg-contain bg-no-repeat bg-bottom lg:bg-right pt-32 pb-44">
-            <div class="container mx-auto px-4 lg:px-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-16">
                     <span class="text-primary font-bold text-lg">DESIGN . DEVELOP . MANAGE</span>
                     <h1 class="font-bold text-[#121633] text-7xl lg:text-8xl">We manage your ideas</h1>
@@ -140,7 +140,7 @@ const marginClass = (index: number) => {
             </div>
         </section>
         <section class="bg-accent/20 py-12 lg:py-32">
-            <div class="container mx-auto px-4 lg:px-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-16 justify-items-stretch">
                     <img src="https://images.unsplash.com/photo-1584119164246-461d43e9bab3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" class="object-cover object-center w-40 lg:w-80 h-40 lg:h-80 rounded-full lg:justify-self-start">
                     <div class="lg:col-span-2 lg:w-8/12 grid gap-6 content-center lg:font-normal">
@@ -154,7 +154,7 @@ const marginClass = (index: number) => {
             </div>
         </section>
         <section class="py-32 lg:py-20">
-            <div class="container mx-auto px-4 lg:px-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-10">
                     <div class="flex justify-between items-center">
                         <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">Our blog</h2>
