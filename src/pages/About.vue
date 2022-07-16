@@ -4,34 +4,54 @@ import { Team } from './../types'
 
 const teams: Ref<Team[]> = ref([
     {
-        image: 'https://images.unsplash.com/photo-1633068587533-ca4159e78e79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1302&q=80',
-        name: 'Farooq Bello',
+        image: '/assets/team/farooq.png',
+        name: 'Farooq B.',
         role: 'Director'
     },
     {
-        image: 'https://images.unsplash.com/photo-1605980776566-0486c3ac7617?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1349&q=80',
-        name: 'Farooq Bello',
-        role: 'Director'
+        image: '/assets/team/usman.png',
+        name: 'K. Usman',
+        role: 'Project director'
     },
     {
-        image: 'https://images.unsplash.com/photo-1579634151863-8ddedd098251?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2211&q=80',
-        name: 'Farooq Bello',
-        role: 'Director'
+        image: '/assets/team/reuben.png',
+        name: 'Reuben A. N.',
+        role: 'Design Lead'
     },
     {
-        image: 'https://images.unsplash.com/photo-1579634151863-8ddedd098251?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2211&q=80',
-        name: 'Farooq Bello',
-        role: 'Director'
+        image: '/assets/team/feyisayo.png',
+        name: 'Feyisayo F.',
+        role: 'UI/UX Designer'
     },
     {
-        image: 'https://images.unsplash.com/photo-1633068587533-ca4159e78e79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1302&q=80',
-        name: 'Farooq Bello',
-        role: 'Director'
+        image: '/assets/team/diala.png',
+        name: 'E. Diala',
+        role: 'Developer'
     },
     {
-        image: 'https://images.unsplash.com/photo-1605980776566-0486c3ac7617?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1349&q=80',
-        name: 'Farooq Bello',
-        role: 'Director'
+        image: '/assets/team/gabriel.png',
+        name: 'Gabriel I.',
+        role: 'UI/UX Designer'
+    },
+    {
+        image: '/assets/team/kayode.png',
+        name: 'Kayode O.',
+        role: 'Developer'
+    },
+    {
+        image: '/assets/team/mansoor.png',
+        name: 'Mansoor N.',
+        role: 'Project Manager'
+    },
+    {
+        image: '/assets/team/sarah.png',
+        name: 'Sarah L.',
+        role: 'Business Development Specialist'
+    },
+    {
+        image: '/assets/team/umar.png',
+        name: 'U. Umar',
+        role: 'Development Lead'
     },
 ])
 </script>
@@ -47,7 +67,7 @@ const teams: Ref<Team[]> = ref([
             </div>
         </section>
         <section class="py-24">
-            <div class="container mx-auto grid gap-12 lg:gap-24 lg:px-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 grid gap-12 lg:gap-24">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div class="grid content-start gap-14 mt-10 px-4">
                         <h2 class="font-bold text-accent text-4xl lg:text-6xl h-min">About Us</h2>
@@ -69,8 +89,8 @@ const teams: Ref<Team[]> = ref([
         </section>
         <section class="py-12 lg:py-32">
             <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
-                <div class="grid gap-x-5 gap-y-14 grid-cols-1 lg:grid-cols-3">
-                    <BaseTeamCard v-for="team in teams" :team="team"/>
+                <div class="grid content-center gap-x-5 gap-y-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <BaseTeamCard v-for="team in teams" :team="team" class="last:lg:col-start-2" />
                 </div>
             </div>
         </section>

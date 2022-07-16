@@ -18,7 +18,7 @@ const email = ref('')
             </div>
         </section>
         <section class="pt-12 pb-36 lg:py-24">
-            <div class="container mx-auto grid gap-12 lg:gap-24 px-4 lg:px-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 grid gap-12 lg:gap-24">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div class="grid content-start gap-14 order-2 lg:order-1">
                         <FormKit type="form" :actions="false" :incomplete-message="false" form-class="grid gap-9">

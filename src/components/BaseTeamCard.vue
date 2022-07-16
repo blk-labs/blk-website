@@ -6,7 +6,7 @@ defineProps<{team: Team}>()
 
 <template>
     <div class="grid gap-4">
-        <img :src="team.image" class="object-cover object-top w-full h-[334px]">
+        <img :src="team.image" class="object-contain h-[334px]">
         <div class="grid gap-1 font-normal">
             <h3 class="text-accent text-xl">{{ team.name }}</h3>
             <div class="flex items-center gap-2">

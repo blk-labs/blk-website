@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue'
+import { useRouter } from 'vue-router'
 import { Article, Service, Work } from './../types'
+
+const router = useRouter()
+const contactUs = () => {
+    router.push({ path: '/contact' })
+}
 
 const blogs: Ref<Article[]> = ref([
     {
@@ -79,10 +85,10 @@ const marginClass = (index: number) => {
     <div id="home">
         <section class="bg-accent/10 pt-64 pb-32 relative overflow-hidden">
             <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 flex items-center">
-                <div class="ml-auto flex-1 lg:w-4/6 grid gap-9 content-center">
+                <div class="ml-auto flex-1 lg:w-6/6 grid gap-9 content-center">
                     <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
                     <h1 class="font-bold text-[#121633] text-4xl lg:text-5xl">A team of remote designers and developers building scalable and intuitive web solutions.</h1>
-                    <BaseButton btnType="action" class="w-fit py-5 px-12 font-medium text-base">Send A Brief</BaseButton>
+                    <BaseButton btnType="action" class="w-fit py-5 px-12 font-medium text-base" @click="contactUs">Send A Brief</BaseButton>
                 </div>
                 <div class="hidden lg:block lg:flex-1 lg:w-2/6">
                     <div class="absolute right-0 bottom-0">

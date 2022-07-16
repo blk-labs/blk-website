@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
+const router = useRouter()
+const contactUs = () => {
+    router.push({ path: '/contact' })
+}
 const links = [
     {
         text: 'Services',
@@ -43,7 +48,7 @@ const socials = [
                         <span class="font-medium text-lg">Interested? We would love to hear from you and offer our solutions for your business.</span>
                         <h1 class="font-bold text-3xl lg:text-6xl">Lets start your next project together</h1>
                     </div>
-                    <BaseButton btnType="outline" class="uppercase w-fit py-4 px-6 text-white border border-white hover:bg-white hover:text-primary hover:shadow-none">Contact us</BaseButton>
+                    <BaseButton btnType="outline" class="uppercase w-fit py-4 px-6 text-white border border-white hover:bg-white hover:text-primary hover:shadow-none" @click="contactUs">Contact us</BaseButton>
                 </div>
                 <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 lg:gap-0">
                     <div class="flex items-center gap-8 text-white text-lg font-normal">

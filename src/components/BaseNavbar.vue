@@ -70,7 +70,7 @@ const toggleNavbar = () => {
     </nav>
     <Transition name="slide-fade">
         <div v-if="showMenu" class="fixed lg:hidden py-6 w-screen h-screen lg:h-fit lg:max-w-sm lg:top-8 lg:right-0 bg-accent shadow-none lg:shadow-2xl lg:shadow-accent z-20">
-            <div class="container mx-auto px-5 lg:px-10 lg:pb-14 pt-4 lg:pt-0">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 lg:pb-14 pt-4 lg:pt-0">
                 <div class="animate__animated animate__fadeInDown grid gap-12 lg:gap-1">
                     <div class="flex items-center justify-between">
                         <img alt="BLK" src="https://blklabs.co/static/media/blk-logoDark.13e50d81.png" class="w-20 h-20 lg:hidden" />
