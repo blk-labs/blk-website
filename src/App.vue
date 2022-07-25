@@ -14,7 +14,7 @@
 
 <style>
 #app {
-  font-family: 'Inter', sans-serif;
+  font-family: "Helvetica Now Display";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

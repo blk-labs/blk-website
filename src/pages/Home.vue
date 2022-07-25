@@ -83,11 +83,11 @@ const marginClass = (index: number) => {
 
 <template>
     <div id="home">
-        <section class="bg-accent/10 pt-64 pb-32 relative overflow-hidden">
-            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 flex items-center">
-                <div class="ml-auto flex-1 lg:w-6/6 grid gap-9 content-center">
+        <section class="bg-accent/10 pt-[299px] lg:pt-[265px] pb-[159px] lg:pb-[54px] relative overflow-hidden">
+            <div class="max-w-screen-2xl mx-auto px-5 sm:px-6 md:px-8 flex items-center">
+                <div class="ml-auto flex-1 grid gap-9 content-center">
                     <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
-                    <h1 class="font-bold text-[#121633] text-4xl lg:text-5xl">A team of remote designers and developers building scalable and intuitive web solutions.</h1>
+                    <h1 class="font-bold text-[#121633] text-4xl lg:text-5xl leading-normal lg:leading-relaxed">A team of remote designers and developers building scalable and intuitive web solutions.</h1>
                     <BaseButton btnType="action" class="w-fit py-5 px-12 font-medium text-base" @click="contactUs">Send A Brief</BaseButton>
                 </div>
                 <div class="hidden lg:block lg:flex-1 lg:w-2/6">
@@ -97,9 +97,9 @@ const marginClass = (index: number) => {
                 </div>
             </div>
         </section>
-        <section class="py-16">
+        <section class="py-16 overflow-hidden">
             <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
-                <div class="grid gap-16">
+                <div class="relative grid gap-16">
                     <div class="grid gap-6">
                         <span class="text-primary font-bold text-lg">WHAT WE HAVE DONE</span>
                         <div class="flex justify-between items-center">
@@ -115,11 +115,18 @@ const marginClass = (index: number) => {
                             <BaseWork :image="work.image" :title="work.title" :text="work.text" />
                         </div>
                     </div>
-                    <div class="lg:hidden ml-auto flex items-center gap-4 text-3xl">
-                        <BaseIcon icon="heroicons-outline:arrow-sm-left" class="text-[#989898]" />
-                        <BaseIcon icon="heroicons-outline:arrow-narrow-right" class="text-black" />
-                    </div>
                 </div>
+                <div class="lg:hidden flex mt-5 items-center justify-between gap-4 text-3xl">
+                    <BaseIcon icon="heroicons-outline:arrow-sm-left" class="text-[#989898]" />
+                    <BaseIcon icon="heroicons-outline:arrow-narrow-right" class="text-black" />
+                </div>
+            </div>
+            <div class="max-w-screen-2xl ml-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 ml-40">
+                        <div v-for="(work, index) in works" :key="index" :class="marginClass(index)">
+                            <BaseWork :image="work.image" :title="work.title" :text="work.text" />
+                        </div>
+                    </div>
             </div>
         </section>
         <section class="py-16">

@@ -52,7 +52,7 @@ const blogs: Ref<Article[]> = ref([
 <template>
     <div v-if="blogs.length > 0" id="our-work">
         <section class="bg-accent/10 pt-64 pb-32">
-            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
+            <div class="max-w-screen-2xl mx-auto px-5 sm:px-6 md:px-8">
                 <div class="grid gap-6">
                     <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
                     <h1 class="font-bold text-[#121633] text-4xl lg:text-7xl">BLK Labs News</h1>
