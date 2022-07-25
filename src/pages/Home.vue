@@ -1,27 +1,28 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { Article, Service, Work } from './../types'
+import { Service } from './../types'
+// import { Article, Service, Work } from './../types'
 
 const router = useRouter()
 const contactUs = () => {
     router.push({ path: '/contact' })
 }
 
-const blogs: Ref<Article[]> = ref([
-    {
-        image: 'https://images.unsplash.com/photo-1444084316824-dc26d6657664?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
-        date: '29 February, 2020',
-        path: '#',
-        title: 'Project is the result of a challenge I participated in as a guest on.'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2226&q=80',
-        date: '29 February, 2020',
-        path: '#',
-        title: 'Project is the result of a challenge I participated in as a guest on.'
-    },
-])
+// const blogs: Ref<Article[]> = ref([
+//     {
+//         image: 'https://images.unsplash.com/photo-1444084316824-dc26d6657664?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+//         date: '29 February, 2020',
+//         path: '#',
+//         title: 'Project is the result of a challenge I participated in as a guest on.'
+//     },
+//     {
+//         image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2226&q=80',
+//         date: '29 February, 2020',
+//         path: '#',
+//         title: 'Project is the result of a challenge I participated in as a guest on.'
+//     },
+// ])
 
 const whatWeDo: Ref<Service[]> = ref([
     {
@@ -39,6 +40,9 @@ const whatWeDo: Ref<Service[]> = ref([
         title: 'Web application',
         text: 'One development for all platforms. We develop with the most innovative technologies to create highly scalable web apps.'
     },
+])
+
+const whatWeDo2: Ref<Service[]> = ref([
     {
         image: '/assets/Mobile-app_ccexpress 1.png',
         title: 'Mobile application',
@@ -51,34 +55,34 @@ const whatWeDo: Ref<Service[]> = ref([
     },
 ])
 
-const works: Ref<Work[]> = ref([
-    {
-        image: 'https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=972&q=80',
-        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Clikvet',
-        path: ''
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
-        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Sketchd',
-        path: ''
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
-        text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
-        title: 'Evolve fitness',
-        path: ''
-    },
-])
+// const works: Ref<Work[]> = ref([
+//     {
+//         image: 'https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=972&q=80',
+//         text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
+//         title: 'Clikvet',
+//         path: ''
+//     },
+//     {
+//         image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
+//         text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
+//         title: 'Sketchd',
+//         path: ''
+//     },
+//     {
+//         image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
+//         text: 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,',
+//         title: 'Evolve fitness',
+//         path: ''
+//     },
+// ])
 
-const marginClass = (index: number) => {
-    if (index > 0) {
-        return index === 1 ? 'mt-8' : 'mt-16'
-    } else {
-        return 'mt-0'
-    }
-}
+// const marginClass = (index: number) => {
+//     if (index > 0) {
+//         return index === 1 ? 'mt-8' : 'mt-16'
+//     } else {
+//         return 'mt-0'
+//     }
+// }
 </script>
 
 <template>
@@ -97,7 +101,7 @@ const marginClass = (index: number) => {
                 </div>
             </div>
         </section>
-        <section class="py-16 overflow-hidden">
+        <!-- <section class="py-16 overflow-hidden">
             <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="relative grid gap-16">
                     <div class="grid gap-6">
@@ -106,12 +110,19 @@ const marginClass = (index: number) => {
                             <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">Our recent work</h2>
                             <div class="hidden lg:flex items-center gap-4 text-3xl">
                                 <BaseIcon icon="heroicons-outline:arrow-sm-left" class="text-[#989898]" />
-                                <BaseIcon icon="heroicons-outline:arrow-narrow-right" class="text-black" />
+                                <BaseButton @click="next">
+                                    <BaseIcon icon="heroicons-outline:arrow-narrow-right" class="text-black" />
+                                </BaseButton>
                             </div>
                         </div>
                     </div>
+                    <div id="slide" class="relative w-full flex gap-10 snap-x snap-mandatory overflow-x-auto pb-14">
+                        <div v-for="(work, index) in works" :key="index" :class="marginClass(index)" class="snap-start scroll-mx-6 shrink-0">
+                            <BaseWork :image="work.image" :title="work.title" :text="work.text" />
+                        </div>
+                    </div>
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                        <div v-for="(work, index) in works" :key="index" :class="marginClass(index)">
+                        <div v-for="(work, index) in works" :key="index" :class="marginClass(index)" class="snap-start scroll-mx-6 shrink-0">
                             <BaseWork :image="work.image" :title="work.title" :text="work.text" />
                         </div>
                     </div>
@@ -121,14 +132,7 @@ const marginClass = (index: number) => {
                     <BaseIcon icon="heroicons-outline:arrow-narrow-right" class="text-black" />
                 </div>
             </div>
-            <div class="max-w-screen-2xl ml-auto">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 ml-40">
-                        <div v-for="(work, index) in works" :key="index" :class="marginClass(index)">
-                            <BaseWork :image="work.image" :title="work.title" :text="work.text" />
-                        </div>
-                    </div>
-            </div>
-        </section>
+        </section> -->
         <section class="py-16">
             <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-6">
@@ -136,9 +140,16 @@ const marginClass = (index: number) => {
                     <div class="flex justify-between items-center">
                         <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">What we do</h2>
                     </div>
-                    <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-accent">
-                        <div v-for="(tech, index) in whatWeDo" :key="index" class="lg:p-10" :class="index === 3 ? 'divide-transparent' : ''">
-                            <BaseService :service="tech" />
+                    <div class="grid gap-10">
+                        <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-accent">
+                            <div v-for="(tech, index) in whatWeDo" :key="index" class="lg:p-10" :class="index === 3 ? 'divide-transparent' : ''">
+                                <BaseService :service="tech" />
+                            </div>
+                        </div>
+                        <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-accent">
+                            <div v-for="(tech2, index) in whatWeDo2" :key="index" class="lg:p-10" :class="index === 3 ? 'divide-transparent' : ''">
+                                <BaseService :service="tech2" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,7 +177,7 @@ const marginClass = (index: number) => {
                 </div>
             </div>
         </section>
-        <section class="py-32 lg:py-20">
+        <!-- <section class="py-32 lg:py-20">
             <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-10">
                     <div class="flex justify-between items-center">
@@ -181,6 +192,10 @@ const marginClass = (index: number) => {
                     <span class="text-primary font-bold text-2xl ml-auto lg:hidden block">View all blog</span>
                 </div>
             </div>
-        </section>
+        </section> -->
     </div>
 </template>
+
+<style scoped>
+
+</style>

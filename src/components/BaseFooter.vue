@@ -26,7 +26,7 @@ const socials = [
     },
     {
         icon: 'entypo-social:twitter',
-        path: '#'
+        path: 'https://twitter.com/blk_labs'
     },
     {
         icon: 'carbon:logo-instagram',

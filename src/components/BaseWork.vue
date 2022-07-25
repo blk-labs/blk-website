@@ -11,7 +11,7 @@ const workProps = defineProps<WorkProps>()
 </script>
 
 <template>
-    <div class="w-fit grid gap-5 max-w-2xl">
+    <div class="grid gap-5 w-[488px]">
         <img :src="workProps.image" class="object-cover object-center w-full h-[440px]">
         <div class="grid gap-5 text-left">
             <div class="grid gap-2.5">

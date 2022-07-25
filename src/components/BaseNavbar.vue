@@ -37,7 +37,7 @@ const socials = [
     },
     {
         icon: 'entypo-social:twitter',
-        path: '#'
+        path: 'https://twitter.com/blk_labs'
     },
     {
         icon: 'carbon:logo-instagram',
@@ -62,8 +62,8 @@ const toggleNavbar = () => {
                     <img alt="BLK" src="https://blklabs.co/static/media/blk-logoDark.13e50d81.png" class="w-20 lg:w-24 h-20 lg:h-24" />
                 </router-link>
                 <BaseButton type="button" class="rounded-full p-2.5 w-10 h-10 bg-white drop-shadow-xl border-none lg:mr-10 z-20" @click="toggleNavbar()">
-                    <span aria-hidden="true" class="flex h-0.5 w-5 bg-black transform transition lg:duration-500 ease-in-out" :class="{'lg:-rotate-45': showMenu,' -translate-y-1': !showMenu }"></span>
-                    <span aria-hidden="true" class="flex h-0.5 w-5 bg-black transform transition lg:duration-500 ease-in-out" :class="{'lg:rotate-45': showMenu, ' translate-y-1': !showMenu}"></span>
+                    <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-black transform transition lg:duration-500 ease-in-out" :class="{'lg:-rotate-45': showMenu,' -translate-y-1': !showMenu }"></span>
+                    <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-black transform transition lg:duration-500 ease-in-out" :class="{'lg:rotate-45': showMenu, ' translate-y-1': !showMenu}"></span>
                 </BaseButton>
             </div>
             <Transition name="slide-fade">
