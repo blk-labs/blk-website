@@ -18,6 +18,9 @@ const whatWeDo: Ref<Service[]> = ref([
         title: 'Web application',
         text: 'One development for all platforms. We develop with the most innovative technologies to create highly scalable web apps.'
     },
+])
+
+const whatWeDo2: Ref<Service[]> = ref([
     {
         image: '/assets/Mobile-app_ccexpress 1.png',
         title: 'Mobile application',
@@ -73,7 +76,7 @@ const howWeWork: Ref<Service[]> = ref([
                         <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">How we work</h2>
                     </div>
                     <div class="grid gap-10 grid-cols-1 lg:grid-cols-4">
-                        <div v-for="(process, index) in howWeWork" :key="index" class="lg:pr-10" :class="index === 3 ? 'divide-transparent' : ''">
+                        <div v-for="(process, index) in howWeWork" :key="index" class="lg:pr-10">
                             <BaseService :service="process" />
                         </div>
                     </div>
@@ -87,9 +90,16 @@ const howWeWork: Ref<Service[]> = ref([
                     <div class="flex justify-between items-center">
                         <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">What we do</h2>
                     </div>
-                    <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-accent">
-                        <div v-for="(tech, index) in whatWeDo" :key="index" class="lg:p-10" :class="index === 3 ? 'divide-transparent' : ''">
-                            <BaseService :service="tech" />
+                    <div class="grid gap-10">
+                        <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-accent">
+                            <div v-for="(tech, index) in whatWeDo" :key="index" class="lg:p-10">
+                                <BaseService :service="tech" />
+                            </div>
+                        </div>
+                        <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-accent">
+                            <div v-for="(tech, index) in whatWeDo2" :key="index" class="lg:p-10">
+                                <BaseService :service="tech" />
+                            </div>
                         </div>
                     </div>
                 </div>
