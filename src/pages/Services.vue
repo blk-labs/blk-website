@@ -31,6 +31,11 @@ const whatWeDo2: Ref<Service[]> = ref([
         title: 'Support & Maintenance',
         text: 'Our commitment doesn’t finish with the project’s end; we manage your digital product and we go with you beyond the delivery.'
     },
+    {
+        image: '/assets/megaphone-on-pink-background-3d-render-1956073714.png',
+        title: 'Digital Transformation',
+        text: "Get your online products & services on the right customer's screens. We use automated tools to  stimulate growth & drive conversions."
+    },
 ])
 
 const howWeWork: Ref<Service[]> = ref([
