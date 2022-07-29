@@ -6,7 +6,7 @@ const serviceProps = defineProps<{service: Service}>()
 
 <template>
     <div class="w-fit grid gap-5 max-w-2xl">
-        <img :src="serviceProps.service.image" class="object-cover object-center w-32 h-32">
+        <img :src="serviceProps.service.image" class="object-contain object-center w-32 h-32">
         <div class="grid gap-5 text-left">
             <div class="grid gap-2.5">
                 <h1 class="text-2xl font-normal text-primary">{{ serviceProps.service.title }}</h1>

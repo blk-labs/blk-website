@@ -10,7 +10,7 @@ const email = ref('')
 <template>
     <div id="contact">
         <section class="bg-accent/10 pt-64 pb-32">
-            <div class="max-w-screen-2xl mx-auto px-5 sm:px-6 md:px-8">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-5 sm:px-6 md:px-8">
                 <div class="grid gap-5">
                     <h1 class="font-bold text-[#121633] text-4xl lg:text-7xl">Hello!</h1>
                     <p class="font-normal text-lg lg:text-3xl text-neutral-600">Talk to us, we'd love to hear about you and the solutions we can offer your business.</p>
@@ -18,7 +18,7 @@ const email = ref('')
             </div>
         </section>
         <section class="pt-12 pb-36 lg:py-24">
-            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 grid gap-12 lg:gap-24">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 grid gap-12 lg:gap-24">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div class="grid content-start gap-14 order-2 lg:order-1">
                         <FormKit type="form" :actions="false" :incomplete-message="false" form-class="grid gap-9">

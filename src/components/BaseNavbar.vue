@@ -56,18 +56,18 @@ const toggleNavbar = () => {
 
 <template>
     <nav class="absolute top-0 left-0 right-0 z-10">
-        <div class="relative max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 pt-8">
+        <div class="relative max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 pt-8">
             <div class="flex justify-between items-center">
                 <router-link to="/">
                     <img alt="BLK" src="https://blklabs.co/static/media/blk-logoDark.13e50d81.png" class="w-20 lg:w-24 h-20 lg:h-24" />
                 </router-link>
-                <BaseButton type="button" class="rounded-full p-2.5 w-10 h-10 bg-white drop-shadow-xl border-none lg:mr-10 z-20" @click="toggleNavbar()">
+                <BaseButton type="button" class="rounded-full p-2.5 w-10 h-10 bg-white drop-shadow-xl border-none z-20" @click="toggleNavbar()">
                     <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-black transform transition lg:duration-500 ease-in-out" :class="{'lg:-rotate-45': showMenu,' -translate-y-1': !showMenu }"></span>
                     <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-black transform transition lg:duration-500 ease-in-out" :class="{'lg:rotate-45': showMenu, ' translate-y-1': !showMenu}"></span>
                 </BaseButton>
             </div>
             <Transition name="slide-fade">
-                <div v-if="showMenu" class="fixed lg:absolute hidden lg:flex py-8 w-screen h-screen lg:h-fit lg:max-w-sm lg:top-8 lg:right-9 bg-accent shadow-none lg:shadow-2xl lg:shadow-accent z-10">
+                <div v-if="showMenu" class="fixed lg:absolute hidden lg:flex py-8 w-screen h-screen lg:h-fit lg:max-w-sm lg:top-8 lg:right-2 bg-accent shadow-none lg:shadow-2xl lg:shadow-accent z-10">
                     <div class="container mx-auto px-5 lg:px-10 lg:pb-14 pt-8 lg:pt-0">
                         <div class="animate__animated animate__fadeInDown grid gap-12 lg:gap-1">
                             <div class="flex items-center justify-between h-8"/>
@@ -94,7 +94,7 @@ const toggleNavbar = () => {
                   leave-to-class="-translate-y-10 opacity-0"
                 >
         <div v-if="showMenu" class="fixed lg:hidden py-6 w-screen h-screen lg:h-fit lg:max-w-sm lg:top-8 lg:right-0 bg-accent shadow-none lg:shadow-2xl lg:shadow-accent z-20">
-            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 lg:pb-14 pt-4 lg:pt-0">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 lg:pb-14 pt-4 lg:pt-0">
                 <div class="animate__animated animate__fadeInDown grid gap-12 lg:gap-1">
                     <div class="flex items-center justify-between">
                         <img alt="BLK" src="https://blklabs.co/static/media/blk-logoDark.13e50d81.png" class="w-20 h-20 lg:hidden" />

@@ -26,17 +26,17 @@ const contactUs = () => {
 
 const whatWeDo: Ref<Service[]> = ref([
     {
-        image: '/assets/design icon_ccexpress 1.png',
+        image: '/assets/design.png',
         title: 'UI/UX Design',
         text: 'We work closely with our clients to wireframe, design, and sketch the most user friendly web and mobile applications.'
     },
     {
-        image: '/assets/web-dev icon_ccexpress 1.png',
+        image: '/assets/web-dev.png',
         title: 'Web development',
         text: 'We collaborate with you to create high quality websites; from simple websites to online stores to CMS, we do it all.'
     },
     {
-        image: '/assets/web app_ccexpress 1.png',
+        image: '/assets/web-app.png',
         title: 'Web application',
         text: 'One development for all platforms. We develop with the most innovative technologies to create highly scalable web apps.'
     },
@@ -44,17 +44,17 @@ const whatWeDo: Ref<Service[]> = ref([
 
 const whatWeDo2: Ref<Service[]> = ref([
     {
-        image: '/assets/Mobile-app_ccexpress 1.png',
+        image: '/assets/mobile.png',
         title: 'Mobile application',
         text: 'We specialize in building high quality native mobile apps for Android and iOS that are interactive, engaging and fun.'
     },
     {
-        image: '/assets/maintenance_ccexpress 1.png',
+        image: '/assets/maintenance.png',
         title: 'Support & Maintenance',
         text: 'Our commitment doesn’t finish with the project’s end; we manage your digital product and we go with you beyond the delivery.'
     },
     {
-        image: '/assets/megaphone-on-pink-background-3d-render-1956073714.png',
+        image: '/assets/megaphone.png',
         title: 'Digital Transformation',
         text: "Get your online products & services on the right customer's screens. We use automated tools to  stimulate growth & drive conversions."
     },
@@ -93,8 +93,8 @@ const whatWeDo2: Ref<Service[]> = ref([
 <template>
     <div id="home">
         <section class="bg-accent/10 pt-[299px] lg:pt-[265px] pb-[159px] lg:pb-[54px] relative overflow-hidden">
-            <div class="max-w-screen-2xl mx-auto px-5 sm:px-6 md:px-8 flex items-center">
-                <div class="ml-auto flex-1 grid gap-9 content-center">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-5 sm:px-6 md:px-8 flex items-center">
+                <div class="ml-auto lg:max-w-3xl grid gap-9 content-center">
                     <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
                     <h1 class="font-bold text-[#121633] text-4xl lg:text-5xl leading-normal lg:leading-relaxed">A team of remote designers and developers building scalable and intuitive web solutions.</h1>
                     <BaseButton btnType="action" class="w-fit py-5 px-12 font-medium text-base" @click="contactUs">Send A Brief</BaseButton>
@@ -107,7 +107,7 @@ const whatWeDo2: Ref<Service[]> = ref([
             </div>
         </section>
         <!-- <section class="py-16 overflow-hidden">
-            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="relative grid gap-16">
                     <div class="grid gap-6">
                         <span class="text-primary font-bold text-lg">WHAT WE HAVE DONE</span>
@@ -139,20 +139,20 @@ const whatWeDo2: Ref<Service[]> = ref([
             </div>
         </section> -->
         <section class="py-16">
-            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-6">
                     <span class="text-primary font-bold text-lg">WE ARE BLK LABS</span>
                     <div class="flex justify-between items-center">
                         <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">What we do</h2>
                     </div>
-                    <div class="grid gap-10">
-                        <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-accent">
-                            <div v-for="(tech, index) in whatWeDo" :key="index" class="lg:p-10" :class="index === 3 ? 'divide-transparent' : ''">
+                    <div class="grid py-4 gap-20">
+                        <div class="grid gap-x-24 grid-cols-1 lg:grid-cols-3">
+                            <div v-for="(tech, index) in whatWeDo" :key="index" class="py-8" :class="index === 1 ? 'services-border-class' : ''">
                                 <BaseService :service="tech" />
                             </div>
                         </div>
-                        <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-dashed lg:divide-accent">
-                            <div v-for="(tech2, index) in whatWeDo2" :key="index" class="lg:p-10" :class="index === 3 ? 'divide-transparent' : ''">
+                        <div class="grid gap-x-24 grid-cols-1 lg:grid-cols-3">
+                            <div v-for="(tech2, index) in whatWeDo2" :key="index" class="py-8" :class="index === 1 ? 'services-border-class' : ''">
                                 <BaseService :service="tech2" />
                             </div>
                         </div>
@@ -161,7 +161,7 @@ const whatWeDo2: Ref<Service[]> = ref([
             </div>
         </section>
         <section class="bg-[#F8F8FF] bg-[url('/assets/map.svg')] bg-contain bg-no-repeat bg-bottom lg:bg-right pt-32 pb-44">
-            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-16">
                     <span class="text-primary font-bold text-lg">DESIGN . DEVELOP . MANAGE</span>
                     <h1 class="font-bold text-[#121633] text-7xl lg:text-8xl">We manage your ideas</h1>
@@ -169,7 +169,7 @@ const whatWeDo2: Ref<Service[]> = ref([
             </div>
         </section>
         <section class="bg-accent/20 py-12 lg:py-32">
-            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-16 justify-items-stretch">
                     <img src="https://images.unsplash.com/photo-1584119164246-461d43e9bab3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" class="object-cover object-center w-40 lg:w-80 h-40 lg:h-80 rounded-full lg:justify-self-start">
                     <div class="lg:col-span-2 lg:w-8/12 grid gap-6 content-center lg:font-normal">
@@ -183,7 +183,7 @@ const whatWeDo2: Ref<Service[]> = ref([
             </div>
         </section>
         <!-- <section class="py-32 lg:py-20">
-            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid gap-10">
                     <div class="flex justify-between items-center">
                         <h2 class="font-bold text-[#121633] text-4xl lg:text-6xl">Our blog</h2>
@@ -201,6 +201,35 @@ const whatWeDo2: Ref<Service[]> = ref([
     </div>
 </template>
 
-<style scoped>
-
+<style>
+.services-border-class {
+    position: relative;
+}
+.services-border-class:before {
+    width: 125%;
+    height: 100%;
+    left: -12.5%;
+    top: 0;
+    border-left: 1px solid rgb(132 148 248);
+    border-right: 1px solid rgb(132 148 248);
+    border-style: dashed;
+    content: '';
+    position: absolute;
+    display: block;
+}
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
