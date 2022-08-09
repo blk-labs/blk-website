@@ -171,7 +171,7 @@ const whatWeDo2: Ref<Service[]> = ref([
         <section class="bg-accent/20 py-12 lg:py-32">
             <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-16 justify-items-stretch">
-                    <img src="https://images.unsplash.com/photo-1584119164246-461d43e9bab3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" class="object-cover object-center w-40 lg:w-80 h-40 lg:h-80 rounded-full lg:justify-self-start">
+                    <img src="/assets/team/farooq.png" class="object-cover object-center w-40 lg:w-80 h-40 lg:h-80 rounded-full lg:justify-self-start">
                     <div class="lg:col-span-2 lg:w-8/12 grid gap-6 content-center lg:font-normal">
                         <h2 class="text-accent font-medium text-3xl">We develop enterprise-grade web & digital solutions for businesses.</h2>
                         <div class="grid gap-3 font-normal">
