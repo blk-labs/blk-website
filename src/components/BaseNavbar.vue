@@ -59,7 +59,7 @@ const toggleNavbar = () => {
         <div class="relative max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 pt-8">
             <div class="flex justify-between items-center">
                 <router-link to="/">
-                    <img alt="BLK" src="https://blklabs.co/assets/blk-logoDark.png" class="w-20 lg:w-24 h-20 lg:h-24" />
+                    <img alt="BLK" src="/blk-logoDark.png" class="w-20 lg:w-24 h-20 lg:h-24" />
                 </router-link>
                 <BaseButton type="button" class="rounded-full p-2.5 w-10 h-10 bg-white drop-shadow-xl border-none z-20" @click="toggleNavbar()">
                     <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-black transform transition lg:duration-500 ease-in-out" :class="{'lg:-rotate-45': showMenu,' -translate-y-1': !showMenu }"></span>
@@ -97,7 +97,7 @@ const toggleNavbar = () => {
             <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 lg:pb-14 pt-4 lg:pt-0">
                 <div class="animate__animated animate__fadeInDown grid gap-12 lg:gap-1">
                     <div class="flex items-center justify-between">
-                        <img alt="BLK" src="https://blklabs.co/assets/blk-logoDark.png" class="w-20 h-20 lg:hidden" />
+                        <img alt="BLK" src="/blk-logoDark.png" class="w-20 h-20 lg:hidden" />
                         <BaseButton type="button" class="rounded-full p-3 lg:p-2 bg-white drop-shadow-xl border-none ml-auto" @click="toggleNavbar()">
                             <BaseIcon icon="heroicons-outline:x" class="text-xl lg:text-2xl text-black" />
                         </BaseButton>
