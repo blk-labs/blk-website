@@ -19,19 +19,39 @@ const teams: Ref<Team[]> = ref([
         role: 'Design Lead'
     },
     {
+        image: '/assets/team/umar.png',
+        name: 'U. Umar',
+        role: 'Development Lead'
+    },
+    {
+        image: '/assets/team/sarah.png',
+        name: 'Sarah L.',
+        role: 'Business Development Specialist'
+    },
+    {
+        image: '/assets/team/razak.png',
+        name: 'Razak A.',
+        role: 'Digital Marketing Lead'
+    },
+    {
+        image: '/assets/team/zahra.png',
+        name: 'Zannah Z.',
+        role: 'Digital Manager'
+    },
+    {
         image: '/assets/team/feyisayo.png',
         name: 'Feyisayo F.',
+        role: 'UI/UX Designer'
+    },
+    {
+        image: '/assets/team/gabriel.png',
+        name: 'Gabriel I.',
         role: 'UI/UX Designer'
     },
     {
         image: '/assets/team/diala.png',
         name: 'E. Diala',
         role: 'Developer'
-    },
-    {
-        image: '/assets/team/gabriel.png',
-        name: 'Gabriel I.',
-        role: 'UI/UX Designer'
     },
     {
         image: '/assets/team/kayode.png',
@@ -43,23 +63,13 @@ const teams: Ref<Team[]> = ref([
         name: 'Mansoor N.',
         role: 'Project Manager'
     },
-    {
-        image: '/assets/team/sarah.png',
-        name: 'Sarah L.',
-        role: 'Business Development Specialist'
-    },
-    {
-        image: '/assets/team/umar.png',
-        name: 'U. Umar',
-        role: 'Development Lead'
-    },
 ])
 </script>
 
 <template>
     <div id="about-us">
         <section class="bg-accent/10 pt-64 pb-32">
-            <div class="max-w-screen-2xl mx-auto px-5 sm:px-6 md:px-8">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-5 sm:px-6 md:px-8">
                 <div class="grid gap-5">
                     <h1 class="font-extrabold text-[#121633] text-4xl lg:text-7xl lg:leading-tight">Welcome,<br>We are BLK Labs</h1>
                     <p class="font-normal text-lg lg:text-3xl text-[#564D73]">Not your everyday tech company - we are remote developers who enjoy transforming business ideas into digital solutions</p>
@@ -67,7 +77,7 @@ const teams: Ref<Team[]> = ref([
             </div>
         </section>
         <section class="py-24">
-            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 grid gap-12 lg:gap-24">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 grid gap-12 lg:gap-24">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div class="grid content-start gap-14 mt-10 px-4">
                         <h2 class="font-bold text-accent text-4xl lg:text-6xl h-min">About Us</h2>
@@ -88,9 +98,9 @@ const teams: Ref<Team[]> = ref([
             </div>
         </section>
         <section class="py-12 lg:py-32">
-            <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
+            <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid content-center gap-x-5 gap-y-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    <BaseTeamCard v-for="team in teams" :team="team" class="last:lg:col-start-2" />
+                    <BaseTeamCard v-for="team in teams" :team="team" />
                 </div>
             </div>
         </section>
