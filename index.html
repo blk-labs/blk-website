@@ -11,7 +11,14 @@
     <link href="/font/stylesheet.css" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <form name="contact-us" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="checkbox" name="project" />
+        <input type="text" name="description" />
+        <input type="email" name="email" />
+      </form>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
