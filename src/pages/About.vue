@@ -8,11 +8,11 @@ const teams: Ref<Team[]> = ref([
         name: 'Farooq B.',
         role: 'Director'
     },
-    {
-        image: '/assets/team/usman.png',
-        name: 'K. Usman',
-        role: 'Project director'
-    },
+//    {
+//       image: '/assets/team/usman.png',
+//        name: 'K. Usman',
+//        role: 'Project director'
+//    },
     {
         image: '/assets/team/reuben.png',
         name: 'Reuben A. N.',
